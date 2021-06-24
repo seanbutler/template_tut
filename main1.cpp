@@ -1,6 +1,5 @@
 #include <iostream>
 
-
 // ----------------------------------------------------------------------
 
 struct IntOps {
@@ -74,7 +73,6 @@ int main(int, char**) {
         tmplistPtr = (MyList<std::string>*)malloc(sizeof(MyList<std::string>));
         numListPtr = tmplistPtr;
 
-
         for(int n=0;n<=3;n++){
             tmplistPtr->head = ds[n];
             tmplistPtr->tail = (MyList<std::string>*)malloc(sizeof(MyList<std::string>));
@@ -83,6 +81,5 @@ int main(int, char**) {
 
         std::cout << Total(numListPtr) << std::endl;
     }
-
 
 }
